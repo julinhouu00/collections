@@ -45,29 +45,6 @@ public class CarrinhoCompras {
     public void exibirItens(){
         System.out.println(ItemList);
     }
-
-    public static void main(String[] args) {
-        CarrinhoCompras carrinho = new CarrinhoCompras();
-
-        carrinho.adicionarItem("Camisa", 50, 2);
-        carrinho.adicionarItem("Calça", 100, 1);
-        carrinho.adicionarItem("Boné", 25, 3);
-
-        // Exibindo itens
-        System.out.println("Itens no carrinho:");
-        carrinho.exibirItens();
-
-        // Calculando valor total
-        System.out.println("Valor total do carrinho: R$" + carrinho.calcularValorTotal());
-
-        // Removendo um item
-        carrinho.removerItem("Calça");
-
-        // Exibindo itens após a remoção
-        System.out.println("Itens no carrinho após a remoção:");
-        carrinho.exibirItens();
-
-        // Calculando valor total após a remoção
-        System.out.println("Valor total do carrinho após a remoção: R$" + carrinho.calcularValorTotal());
-    }
 }
+
+
